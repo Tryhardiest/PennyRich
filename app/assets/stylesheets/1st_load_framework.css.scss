@@ -7,6 +7,14 @@ img {
   @extend .img-responsive;
   margin: 0 auto;
   }
+  article {
+    float: left;
+    padding: 20px;
+    width: 50%;
+    background-color: #f1f1f1;
+
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
