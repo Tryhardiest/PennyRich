@@ -1,7 +1,4 @@
 require_relative 'boot'
-config.assets.initialize_on_precompile = false
-config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
-
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -21,6 +18,8 @@ module RailsSignupDownload
         request_specs: false
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
+    config.assets.initialize_on_precompile = false
+    config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
