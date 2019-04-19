@@ -1,4 +1,6 @@
 require_relative 'boot'
+config.assets.initialize_on_precompile = false
+config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
 
 require 'rails/all'
 
